@@ -1,0 +1,24 @@
+<el-row>
+  <el-col :span="24" v-for="(tles, id) in images" :key="id" >
+     <div class="mb"> 
+      <span >——{{tles.title}}——</span>
+      <el-button  class="eb" size="mini" round>更多<i class="el-icon-arrow-right el-icon--right"></i></el-button>
+      <!-- <span>更多<i class="el-icon-d-arrow-right el-icon--right"></i></span> -->
+    </div>
+      <el-row class="">
+        <el-col :span="6" v-for="(img, index) in images[id].store_list" :key="index" v-if="index<4"><!--:offset="id%2!= 0 ? 2 : 0"-->
+          <el-card :body-style="{ padding: '0px' }">
+            <img v-bind:src="img.store_src" class="image">
+            <div style="padding: 14px;">
+              <span>{{img.store_title}}</span>
+              <div class="bottom clearfix">
+                  <span>店铺: {{img.store}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <time class="time">{{ currentDate }}</time>
+                <!-- <el-button type="text" class="button">操作按钮</el-button> -->
+              </div>
+            </div>
+          </el-card>
+        </el-col>
+      </el-row>
+  </el-col>
+</el-row>

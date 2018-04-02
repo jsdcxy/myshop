@@ -1,0 +1,28 @@
+.el-main {
+    /* background-color: #E9EEF3; */
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+    /* width: 100%; */
+    height: 250px;
+    /* overflow: auto;出现滚动条*/
+    /*overflow-y: scroll;*/
+    overflow:hidden;/*不出现滚动条*/
+    padding-left:0; 
+    padding-right:0; 
+  }
+  /* * {box-sizing: border-box;} */
+  /* .row .col {
+    float: left;
+    width: 12.5%;
+    background-color: #0f0;
+    border: 10px solid #fff;
+    display: inline
+  } */
+  .ppp{
+    width: 20%;
+    display: inline-block;
+    
+  }
+ 

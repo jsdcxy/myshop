@@ -1,0 +1,36 @@
+import Vue from 'vue'
+export default {
+    data() {
+      return {
+        count:0,
+        images: [],
+        // tle:[],
+        currentDate: new Date().toLocaleDateString()
+      };
+    },
+    created() {
+      this.getImages();
+      
+      // this.getTitle();
+    },
+    methods: {
+      getImages() {
+          Vue.$http.get('/menus').then(res => {
+              this.images =res.data
+              console.log(this.images[3]);
+              console.log(this.images);
+              
+          }).catch(function (error) {
+              console.log(error);
+            });
+      }
+      // getTitle() {
+      //   Vue.$http.get('/menus').then(res => {
+      //       this.tle =res.data
+      //       //console.log(res)
+      //   }).catch(function (error) {
+      //       console.log(error);
+      //     });
+      // }
+    }
+  }

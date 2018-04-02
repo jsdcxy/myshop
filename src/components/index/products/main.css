@@ -1,0 +1,56 @@
+.products {
+    background-color: rgb(236, 233, 17);
+    color: #333;
+    text-align: center;
+    line-height: 50px;
+    /* width: 100%; */
+    /* height: 385px; */
+    /* overflow: auto;出现滚动条;*/
+    
+  }
+  .time {
+    font-size: 13px;
+    color: #999;
+  }
+  
+  .bottom {
+    margin-top: 13px;
+    line-height: 10px;
+  }
+
+  .button {
+    padding: 0;
+    float: right;
+  }
+
+  .image {
+    width: 100%;
+    height: 100px;
+    display: block;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+      display: table;
+      content: "";
+  }
+  
+  .clearfix:after {
+      clear: both
+  }
+  .mb{
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-image: url(../../..//assets/images/menus_bg.png);
+
+    /* margin-bottom: 60px;  */
+    text-align: center;
+  } 
+.eb{
+  /* text-align: right; */
+  margin-right: 10px;
+  margin-top: 15px;
+  float: right;
+    /* float: right; */
+  }
