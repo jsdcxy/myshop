@@ -8,20 +8,22 @@
     {
       "id": 2,
       "title": "image 02",
-      "src": "http://share-files.fccn.cc/0dfc5245-18f5-4525-879f-146071a16c88.jpg?imageView2/1/w/400/h/400/interlace/1/ignore-error/1"  
+      "src": "http://share-files.fccn.cc/0dfc5245-18f5-4525-879f-146071a16c88.jpg?imageView2/1/w/400/h/400/interlace/1/ignore-error/1"
     },
     {
       "id": 3,
       "title": "image 02",
-      "src": "http://share-files.fccn.cc/0dfc5245-18f5-4525-879f-146071a16c88.jpg?imageView2/1/w/400/h/400/interlace/1/ignore-error/1"  
-    }, {
+      "src": "http://share-files.fccn.cc/0dfc5245-18f5-4525-879f-146071a16c88.jpg?imageView2/1/w/400/h/400/interlace/1/ignore-error/1"
+    },
+    {
       "id": 4,
       "title": "image 02",
-      "src": "http://share-files.fccn.cc/0dfc5245-18f5-4525-879f-146071a16c88.jpg?imageView2/1/w/400/h/400/interlace/1/ignore-error/1"  
-    }, {
+      "src": "http://share-files.fccn.cc/0dfc5245-18f5-4525-879f-146071a16c88.jpg?imageView2/1/w/400/h/400/interlace/1/ignore-error/1"
+    },
+    {
       "id": 5,
       "title": "image 02",
-      "src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/text.jpg?raw=true"  
+      "src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/text.jpg?raw=true"
     },
     {
       "title": "image 06",
@@ -29,12 +31,12 @@
       "id": 6
     }
   ],
-  "menus":[
+  "menus": [
     {
       "id": 0,
       "title": "食品",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list":[
+      "store_list": [
         {
           "store_id": 1,
           "store_title": "葡萄",
@@ -95,7 +97,7 @@
       "id": 2,
       "title": "数码产品",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list":[
+      "store_list": [
         {
           "store_id": 1,
           "store_title": "香肠",
@@ -145,11 +147,12 @@
           "store": "haha"
         }
       ]
-    },{
+    },
+    {
       "id": 3,
       "title": "男装",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list":[
+      "store_list": [
         {
           "store_id": 1,
           "store_title": "皮鞋",
@@ -163,11 +166,12 @@
           "store": "haha"
         }
       ]
-    },{
+    },
+    {
       "id": 4,
       "title": "女装",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list":[
+      "store_list": [
         {
           "store_id": 1,
           "store_title": "上衣",
@@ -181,12 +185,14 @@
           "store": "haha"
         }
       ]
-    },{
+    },
+    {
       "id": 5,
       "title": "家电",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
       "store_list": []
-    },{
+    },
+    {
       "id": 6,
       "title": "床上用品",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
@@ -211,6 +217,4 @@
       "store_list": []
     }
   ]
-  
-  
 }

@@ -2,7 +2,7 @@
   <el-col :span="24" v-for="(tles, id) in images" :key="id" >
      <div class="mb"> 
       <span >——{{tles.title}}——</span>
-      <el-button  class="eb" size="mini" round>更多<i class="el-icon-arrow-right el-icon--right"></i></el-button>
+      <router-link to="/store/main"><el-button  class="eb" size="mini" round>更多<i class="el-icon-arrow-right el-icon--right"></i></el-button></router-link>
       <!-- <span>更多<i class="el-icon-d-arrow-right el-icon--right"></i></span> -->
     </div>
       <el-row class="">

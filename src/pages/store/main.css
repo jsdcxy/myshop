@@ -1,0 +1,25 @@
+.category {
+  border: 1px solid #333;
+}
+
+.property {
+  float: left;
+  border: 1px solid #333;
+  display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #000;
+}
+
+/*--清除浮动--*/
+.clearfloat {
+  width: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}

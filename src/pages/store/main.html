@@ -1,0 +1,52 @@
+<div>
+    <button @click='getList'>输出结果</button>
+    <div>
+      输入分类名，然后点击【确认】按钮添加新的分类
+      <input type='text' v-model='category'>
+      <button @click='addCategory'>确认</button>
+    </div>
+
+    <template v-for='i in categoryList'>
+      <div class='category'>
+        <p>类别：{{i.name}}</p>
+        <div>属性：
+          <p>新增属性名：<input type='text' v-model='i.newPropertyName'>
+            <button @click='addToPropertyList(i)'>点击添加</button>
+          </p>
+          <div class='property-list'>
+            <template v-for='pro in i.propertyList'>
+              <div class='property'>{{pro}}</div>
+            </template>
+            <div class='clearfloat'></div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <p>以下是展示列表</p>
+    <div class='show-list'>
+      <table>
+        <tr>
+          <td v-for='i in categoryList'>
+            {{i.name}}
+          </td>
+          <td>价格</td>
+          <td>数量</td>
+        </tr>
+        <tr v-for='(val,key) in showList'>
+          <td v-for='i in categoryList'>
+            {{val[i.name]}}
+          </td>
+          <td>
+            <input type='text' v-model="val['price']">
+          </td>
+          <td>
+            <input type='text' v-model="val['count']">
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <p>输出结果：</p>
+    <p>{{result}}</p>
+  </div>
