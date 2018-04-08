@@ -1,0 +1,15 @@
+<section>
+  <el-row class="">
+    <el-col :span="12" v-for="(p,index) in products.store_list" :key="index"><!--:offset="id%2!= 0 ? 2 : 0"-->
+      <el-card :body-style="{ padding: '0px' }">
+        <img v-bind:src="p.store_src" class="image">
+        <div style="padding: 14px;">
+          <span>{{p.store_title}}</span>
+          <div class="bottom clearfix">
+            <span>店铺: {{p.store}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          </div>
+        </div>
+      </el-card>
+    </el-col>
+  </el-row>
+</section>

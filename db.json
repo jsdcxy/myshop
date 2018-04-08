@@ -91,7 +91,14 @@
       "id": 1,
       "title": "书籍",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": []
+      "store_list": [
+        {
+          "store_id": 1,
+          "store_title": "香肠",
+          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
+          "store": "haha"
+        }
+      ]
     },
     {
       "id": 2,
@@ -190,31 +197,67 @@
       "id": 5,
       "title": "家电",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": []
+      "store_list": 
+      [
+        {
+          "store_id": 1,
+          "store_title": "香肠",
+          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
+          "store": "haha"
+        }
+      ]
     },
     {
       "id": 6,
       "title": "床上用品",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": []
+      "store_list": [
+        {
+          "store_id": 1,
+          "store_title": "香肠",
+          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
+          "store": "haha"
+        }
+      ]
     },
     {
       "id": 7,
       "title": "生活用品",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": []
+      "store_list": [
+        {
+          "store_id": 1,
+          "store_title": "香肠",
+          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
+          "store": "haha"
+        }
+      ]
     },
     {
       "id": 8,
       "title": "鞋子",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": []
+      "store_list": [
+        {
+          "store_id": 1,
+          "store_title": "香肠",
+          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
+          "store": "haha"
+        }
+      ]
     },
     {
       "id": 9,
       "title": "其他",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": []
+      "store_list": [
+        {
+          "store_id": 1,
+          "store_title": "香肠",
+          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
+          "store": "haha"
+        }
+      ]
     }
   ]
 }
