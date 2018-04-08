@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import './plugins/axios'
 import './plugins/element-ui'
+import './plugins/vue-vant'
 
 Vue.config.productionTip = false
 
