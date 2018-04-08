@@ -1,0 +1,10 @@
+.van-search{
+    background-color: white !important;
+    margin: 10px 0;
+    height: 30px;
+    padding-bottom: 0;
+    .van-search__input-wrap,input{
+        background-color: rgb(242, 242, 242);
+        border: none;
+    }
+}
