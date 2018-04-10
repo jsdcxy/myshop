@@ -8,7 +8,7 @@
       <el-row class="">
         <el-col :span="6" v-for="(img, index) in images[id].store_list" :key="index" v-if="index<4"><!--:offset="id%2!= 0 ? 2 : 0"-->
           <el-card :body-style="{ padding: '0px' }">
-            <img v-bind:src="img.store_src" class="image">
+            <router-link :to="`/commodity/${img.store_id}`"><img v-bind:src="img.store_src" class="image"></router-link>
             <div style="padding: 14px;">
               <span>{{img.store_title}}</span>
               <div class="bottom clearfix">
