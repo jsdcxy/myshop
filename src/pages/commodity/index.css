@@ -1,0 +1,28 @@
+.goods {
+  padding-bottom: 50px;
+}
+.goods-swipe .img{
+     
+      width: 7.5rem;
+      height: 5.5rem;
+      display: block;
+    
+  }
+  .goods-title {
+    font-size: 16px;
+  }
+  .goods-price {
+    color: #f44;
+  }
+  .goods-express {
+    color: #999;
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  .goods-cell-group {
+    margin: 15px 0;
+    
+  }
+  .van-cell__value {
+    color: #999;
+  }
