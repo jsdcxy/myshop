@@ -1,9 +1,8 @@
 <el-row>
   <el-col :span="24" v-for="(tles, id) in images" :key="id" >
      <div class="mb"> 
-      <span >——{{tles.title}}——</span>
-      <router-link to="/store/main"><el-button  class="eb" size="mini" round>更多<i class="el-icon-arrow-right el-icon--right"></i></el-button></router-link>
-      <!-- <span>更多<i class="el-icon-d-arrow-right el-icon--right"></i></span> -->
+      <span >	&mdash;{{tles.title}}	&mdash;</span>
+      <router-link :to="`/products/${tles.id}`"><el-button  class="eb" size="mini" round>更多<i class="el-icon-arrow-right el-icon--right"></i></el-button></router-link>
     </div>
       <el-row class="">
         <el-col :span="6" v-for="(img, index) in images[id].store_list" :key="index" v-if="index<4"><!--:offset="id%2!= 0 ? 2 : 0"-->
@@ -12,9 +11,8 @@
             <div style="padding: 14px;">
               <span>{{img.store_title}}</span>
               <div class="bottom clearfix">
-                  <span>店铺: {{img.store}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <el-tag>店铺: {{img.store}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</el-tag>
                 <time class="time">{{ currentDate }}</time>
-                <!-- <el-button type="text" class="button">操作按钮</el-button> -->
               </div>
             </div>
           </el-card>

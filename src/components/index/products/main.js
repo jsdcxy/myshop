@@ -2,7 +2,6 @@ import Vue from 'vue'
 export default {
   data () {
     return {
-      count: 0,
       images: [],
       // tle:[],
       currentDate: new Date().toLocaleDateString()

@@ -1,4 +1,6 @@
+
 export default {
+
   name: 'products-list',
   computed: {
     categoryId () {
@@ -15,12 +17,12 @@ export default {
   },
   methods: {
     fetchProducts () {
-      let apiUrl = '/menus/'
+      var apiUrl = '/menus/'
       if (this.categoryId) {
         apiUrl = `${apiUrl}${this.categoryId}`
       }
       this.$http.get(apiUrl).then(res => {
-        this.products = res.data
+        this.products = res.data.store_list
       })
     }
   }

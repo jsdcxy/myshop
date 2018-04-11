@@ -1,6 +1,6 @@
 <section>
   <el-row class="">
-    <el-col :span="12" v-for="(p,index) in products.store_list" :key="index"><!--:offset="id%2!= 0 ? 2 : 0"-->
+    <el-col :span="12" v-for="(p,index) in products" :key="index"><!--:offset="id%2!= 0 ? 2 : 0"-->
       <el-card :body-style="{ padding: '0px' }">
         <router-link :to="`/commodity/${p.store_id}`"><img v-bind:src="p.store_src" class="image"></router-link>
         <div style="padding: 14px;">
@@ -11,5 +11,6 @@
         </div>
       </el-card>
     </el-col>
+    <br><span>没有更多了</span>
   </el-row>
 </section>

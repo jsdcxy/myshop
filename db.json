@@ -38,49 +38,52 @@
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
       "store_list": [
         {
-          "store_id": 1,
+          "store_id": 1001,
           "store_title": "葡萄",
           "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E8%91%A1%E8%90%84.jpg?raw=true",
-          "store": "嘻嘻水果店"
+          "store": "嘻嘻水果店",
+          "express":"免运费",
+          "remain":"19",
+          "price": "2680"
         },
         {
-          "store_id": 2,
+          "store_id": 1002,
           "store_title": "香蕉",
           "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E9%A6%99%E8%95%89.jpg?raw=true",
           "store": "嘻嘻水果店"
         },
         {
-          "store_id": 3,
+          "store_id": 1003,
           "store_title": "桃子",
           "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E6%A1%83%E5%AD%90.jpg?raw=true",
           "store": "哈哈水果店"
         },
         {
-          "store_id": 4,
+          "store_id": 1004,
           "store_title": "苹果",
           "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E8%8B%B9%E6%9E%9C.jpg?raw=true",
           "store": "哈哈水果店"
         },
         {
-          "store_id": 5,
+          "store_id": 1005,
           "store_title": "香肠",
           "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
           "store": "haha"
         },
         {
-          "store_id": 6,
+          "store_id": 1006,
           "store_title": "香肠",
           "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
           "store": "haha"
         },
         {
-          "store_id": 7,
+          "store_id": 1007,
           "store_title": "香肠",
           "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
           "store": "haha"
         },
         {
-          "store_id": 8,
+          "store_id": 1008,
           "store_title": "香肠",
           "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
           "store": "haha"
@@ -93,7 +96,7 @@
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
       "store_list": [
         {
-          "store_id": 1,
+          "store_id": 1101,
           "store_title": "香肠",
           "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
           "store": "haha"
@@ -106,25 +109,25 @@
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
       "store_list": [
         {
-          "store_id": 1,
+          "store_id": 21,
           "store_title": "香肠",
           "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
           "store": "haha"
         },
         {
-          "store_id": 2,
+          "store_id": 22,
           "store_title": "面包",
           "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/text02.jpg?raw=true",
           "store": "haha"
         },
         {
-          "store_id": 3,
+          "store_id": 23,
           "store_title": "牛奶",
           "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/text02.jpg?raw=true",
           "store": "haha"
         },
         {
-          "store_id": 4,
+          "store_id": 24,
           "store_title": "苹果",
           "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E8%8B%B9%E6%9E%9C.jpg?raw=true",
           "store": "haha"
@@ -258,6 +261,90 @@
           "store": "haha"
         }
       ]
+    }
+  ],
+  "foods": [
+    {
+      "id": 1001,
+      "store_title": "葡萄",
+      "store_src": [
+        "https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E8%91%A1%E8%90%84.jpg?raw=true"
+      ],
+      "store": "嘻嘻水果店",
+      "express":"免运费",
+      "remain":"19",
+      "price": "2680"
+    },
+    {
+      "id": 1002,
+      "store_title": "香蕉",
+      "store_src": ["https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E9%A6%99%E8%95%89.jpg?raw=true"],
+      "store": "嘻嘻水果店",
+      "express":"免运费",
+      "remain":"19",
+      "price": "2680"
+    },
+    {
+      "id": 1003,
+      "store_title": "桃子",
+      "store_src": ["https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E6%A1%83%E5%AD%90.jpg?raw=true"],
+      "store": "哈哈水果店",
+      "express":"免运费",
+      "remain":"19",
+      "price": "2680"
+    },
+    {
+      "id": 1004,
+      "store_title": "苹果",
+      "store_src": ["https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E8%8B%B9%E6%9E%9C.jpg?raw=true"],
+      "store": "哈哈水果店",
+      "express":"免运费",
+      "remain":"19",
+      "price": "2680"
+    },
+    {
+      "id": 1005,
+      "store_title": "香肠",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "haha",
+      "express":"免运费",
+      "remain":"19",
+      "price": "2680"
+    },
+    {
+      "id": 1006,
+      "store_title": "香肠",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "haha",
+      "express":"免运费",
+      "remain":"19",
+      "price": "2680"
+    },
+    {
+      "id": 1007,
+      "store_title": "香肠",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "haha",
+      "express":"免运费",
+      "remain":"19",
+      "price": "2680"
+    },
+    {
+      "id": 1008,
+      "store_title": "香肠",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "haha",
+      "express":"免运费",
+      "remain":"19",
+      "price": "2680"
+    }
+  ],
+  "books": [
+    {
+      "id": 1101,
+      "store_title": "香肠",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "haha"
     }
   ]
 }

@@ -1,8 +1,8 @@
 .products {
     background-color: rgb(236, 233, 17);
     color: #333;
-    text-align: center;
-    line-height: 50px;
+    text-align: left;
+    line-height: 30px;
     /* width: 100%; */
     /* height: 385px; */
     /* overflow: auto;出现滚动条;*/
@@ -14,7 +14,7 @@
   }
   
   .bottom {
-    margin-top: 13px;
+    margin-top: 0px;
     line-height: 10px;
   }
 
@@ -25,8 +25,8 @@
 
   .image {
     width: 100%;
-    height: 100px;
-    display: block;
+    height: 150px;
+    /* display: block; */
   }
 
   .clearfix:before,
@@ -41,16 +41,28 @@
   .mb{
     height: 50px;
     width: 100%;
-    line-height: 50px;
-    background-image: url(../../..//assets/images/menus_bg.png);
-
+    line-height: 30px;
+    background-image: url(../../../assets/images/menus_bg.jpg);
+    background-size: contain;
     /* margin-bottom: 60px;  */
     text-align: center;
   } 
-.eb{
-  /* text-align: right; */
-  margin-right: 10px;
-  margin-top: 15px;
-  float: right;
-    /* float: right; */
-  }
+  .eb{
+    /* text-align: right; */
+    margin-right: 10px;
+    margin-top: 15px;
+    position: absolute;
+    right: 0;
+    }
+  .el-tag {
+    background-color: #FFFFFF;
+    padding: 0px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 15px;
+    color: #000000;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0px solid rgba(64,158,255,.2);
+}

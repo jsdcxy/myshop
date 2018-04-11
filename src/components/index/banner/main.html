@@ -1,9 +1,12 @@
-<el-header height="250px">
+<!-- <el-header height="250px">
     <el-carousel :interval="3000" type="card" height="200px">
         <el-carousel-item v-for="(img,id) in images" :key="id">
-          <!-- <h3>{{ item }}</h3> -->
           <img v-bind:src="img.src" class="img">
-
         </el-carousel-item>
       </el-carousel>
-</el-header>
+</el-header> -->
+<el-carousel :interval="3000" arrow="always" height="200px">
+  <el-carousel-item v-for="(img , id) in images" :key="id">
+    <img v-bind:src="img.src" class="img">
+  </el-carousel-item>
+</el-carousel>
