@@ -1,4 +1,12 @@
 <section>
+    <van-nav-bar
+    title="商品列表"
+    left-text="返回"
+    right-text="按钮"
+    left-arrow
+    @click-left="onClickLeft"
+    @click-right="onClickRight"
+  />
   <el-row class="">
     <el-col :span="12" v-for="(p,index) in products" :key="index"><!--:offset="id%2!= 0 ? 2 : 0"-->
       <el-card :body-style="{ padding: '0px' }">

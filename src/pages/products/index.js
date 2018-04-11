@@ -43,6 +43,12 @@ export default {
       this.$http.get(apiUrl).then(res => {
         this.products = res.data
       })
+    },
+    onClickLeft () {
+      alert('返回')
+    },
+    onClickRight () {
+      alert('按钮')
     }
   }
 }
