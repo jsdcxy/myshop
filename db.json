@@ -36,57 +36,44 @@
       "id": 0,
       "title": "食品",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": [
+      "recommend_list":[
         {
-          "store_id": 1001,
-          "store_title": "葡萄",
-          "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E8%91%A1%E8%90%84.jpg?raw=true",
+          "id": 1001,
+          "products_title": "葡萄",
+          "products_src": [
+            "https://github.com/jsdcxy/myshop/blob/master/src/assets/images/%E8%91%A1%E8%90%84.jpg?raw=true"
+          ],
           "store": "嘻嘻水果店",
           "express":"免运费",
           "remain":"19",
           "price": "2680"
         },
         {
-          "store_id": 1002,
-          "store_title": "香蕉",
-          "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E9%A6%99%E8%95%89.jpg?raw=true",
-          "store": "嘻嘻水果店"
+          "id": 1002,
+          "products_title": "香蕉",
+          "products_src": ["https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E9%A6%99%E8%95%89.jpg?raw=true"],
+          "store": "嘻嘻水果店",
+          "express":"免运费",
+          "remain":"19",
+          "price": "2680"
         },
         {
-          "store_id": 1003,
-          "store_title": "桃子",
-          "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E6%A1%83%E5%AD%90.jpg?raw=true",
-          "store": "哈哈水果店"
+          "id": 1003,
+          "products_title": "桃子",
+          "products_src": ["https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E6%A1%83%E5%AD%90.jpg?raw=true"],
+          "store": "哈哈水果店",
+          "express":"免运费",
+          "remain":"19",
+          "price": "2680"
         },
         {
-          "store_id": 1004,
-          "store_title": "苹果",
-          "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E8%8B%B9%E6%9E%9C.jpg?raw=true",
-          "store": "哈哈水果店"
-        },
-        {
-          "store_id": 1005,
-          "store_title": "香肠",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        },
-        {
-          "store_id": 1006,
-          "store_title": "香肠",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        },
-        {
-          "store_id": 1007,
-          "store_title": "香肠",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        },
-        {
-          "store_id": 1008,
-          "store_title": "香肠",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
+          "id": 1004,
+          "products_title": "苹果",
+          "products_src": ["https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E8%8B%B9%E6%9E%9C.jpg?raw=true"],
+          "store": "哈哈水果店",
+          "express":"免运费",
+          "remain":"19",
+          "price": "2680"
         }
       ]
     },
@@ -94,181 +81,83 @@
       "id": 1,
       "title": "书籍",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": [
-        {
-          "store_id": 1101,
-          "store_title": "香肠",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        }
+      "recommend_list":[
+
       ]
     },
     {
       "id": 2,
       "title": "数码产品",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": [
-        {
-          "store_id": 21,
-          "store_title": "香肠",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        },
-        {
-          "store_id": 22,
-          "store_title": "面包",
-          "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/text02.jpg?raw=true",
-          "store": "haha"
-        },
-        {
-          "store_id": 23,
-          "store_title": "牛奶",
-          "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/text02.jpg?raw=true",
-          "store": "haha"
-        },
-        {
-          "store_id": 24,
-          "store_title": "苹果",
-          "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E8%8B%B9%E6%9E%9C.jpg?raw=true",
-          "store": "haha"
-        },
-        {
-          "store_id": 5,
-          "store_title": "香肠",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        },
-        {
-          "store_id": 6,
-          "store_title": "香肠",
-          "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/text02.jpg?raw=true",
-          "store": "haha"
-        },
-        {
-          "store_id": 7,
-          "store_title": "香肠",
-          "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/text02.jpg?raw=true",
-          "store": "haha"
-        },
-        {
-          "store_id": 8,
-          "store_title": "香肠",
-          "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/text02.jpg?raw=true",
-          "store": "haha"
-        }
+      "recommend_list":[
+
       ]
     },
     {
       "id": 3,
       "title": "男装",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": [
-        {
-          "store_id": 1,
-          "store_title": "皮鞋",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        },
-        {
-          "store_id": 2,
-          "store_title": "皮带",
-          "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/text02.jpg?raw=true",
-          "store": "haha"
-        }
+      "recommend_list":[
+
       ]
     },
     {
       "id": 4,
       "title": "女装",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": [
-        {
-          "store_id": 1,
-          "store_title": "上衣",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        },
-        {
-          "store_id": 2,
-          "store_title": "裙子",
-          "store_src": "https://github.com/jsdcxy/myfrist/blob/master/assets/images/text02.jpg?raw=true",
-          "store": "haha"
-        }
+      "recommend_list":[
+
       ]
     },
     {
       "id": 5,
       "title": "家电",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": 
-      [
-        {
-          "store_id": 1,
-          "store_title": "香肠",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        }
+      "recommend_list":[
+
       ]
     },
     {
       "id": 6,
       "title": "床上用品",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": [
-        {
-          "store_id": 1,
-          "store_title": "香肠",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        }
+      "recommend_list":[
+
       ]
     },
     {
       "id": 7,
       "title": "生活用品",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": [
-        {
-          "store_id": 1,
-          "store_title": "香肠",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        }
+      "recommend_list":[
+
       ]
     },
     {
       "id": 8,
       "title": "鞋子",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": [
-        {
-          "store_id": 1,
-          "store_title": "香肠",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        }
+      "recommend_list":[
+
       ]
     },
     {
       "id": 9,
       "title": "其他",
       "src": "http://ozaf3jrb8.bkt.clouddn.com/0377f7f0-829b-42c9-bb8b-32109c4b7907.png",
-      "store_list": [
-        {
-          "store_id": 1,
-          "store_title": "香肠",
-          "store_src": "https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg",
-          "store": "haha"
-        }
+      "recommend_list":[
+
       ]
     }
   ],
-  "foods": [
+  "Foods": [
     {
       "id": 1001,
       "store_title": "葡萄",
       "store_src": [
-        "https://github.com/jsdcxy/myfrist/blob/master/assets/images/%E8%91%A1%E8%90%84.jpg?raw=true"
+        "https://github.com/jsdcxy/myshop/blob/master/src/assets/images/%E8%91%A1%E8%90%84.jpg?raw=true",
+        "https://github.com/jsdcxy/myshop/blob/master/src/assets/images/%E8%91%A1%E8%90%84.jpg?raw=true",
+        "https://github.com/jsdcxy/myshop/blob/master/src/assets/images/%E8%91%A1%E8%90%84.jpg?raw=true"
       ],
       "store": "嘻嘻水果店",
       "express":"免运费",
@@ -304,9 +193,9 @@
     },
     {
       "id": 1005,
-      "store_title": "香肠",
-      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
-      "store": "haha",
+      "store_title": "甜角",
+      "store_src": ["https://github.com/jsdcxy/myshop/blob/master/src/assets/images/%E7%94%9C%E8%A7%92.jpg?raw=true"],
+      "store": "云南特产店",
       "express":"免运费",
       "remain":"19",
       "price": "2680"
@@ -339,12 +228,133 @@
       "price": "2680"
     }
   ],
-  "books": [
+  "Books": [
+    {
+      "id": 2001,
+      "store_title": "西游记",
+      "store_src": [
+        "https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=0ee55cba788b4710ce2ffacafbf5a4c0/1b4c510fd9f9d72ad41db486de2a2834349bbb34.jpg",
+        "https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D0%2C26%2C500%2C330%3Bc0%3Dbaike80%2C5%2C5%2C80%2C26/sign=c7f9160ec6fc1e17e9f0d67177a0da31/4d086e061d950a7b8658efdc03d162d9f2d3c9bd.jpg"
+      ],
+      "store": "新华书店",
+      "express":"免运费",
+      "remain":"999",
+      "price": "9980"
+    },
+    {
+      "id": 2001,
+      "store_title": "水浒传",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "新华书店",
+      "express":"免运费",
+      "remain":"999",
+      "price": "9980"
+    },
+    {
+      "id": 2001,
+      "store_title": "三国演义",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "新华书店",
+      "express":"免运费",
+      "remain":"999",
+      "price": "9980"
+    },
+    {
+      "id": 2001,
+      "store_title": "红楼梦",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "新华书店",
+      "express":"免运费",
+      "remain":"999",
+      "price": "9980"
+    }
+  ],
+  "Digital": [
+    {
+      "id": 3001,
+      "store_title": "iPhone X",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "haha",
+      "express":"免运费",
+      "remain":"999",
+      "price": "699980"
+    }
+  ],
+  "MensWear":[
+    {
+      "id": 4001,
+      "store_title": "iPhone X",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "haha",
+      "express":"免运费",
+      "remain":"999",
+      "price": "699980"
+    }
+  ],
+  "WomensWear":[
+    {
+      "id": 5001,
+      "store_title": "iPhone X",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "haha",
+      "express":"免运费",
+      "remain":"999",
+      "price": "699980"
+    }
+  ],
+  "Appliance":[
+    {
+      "id": 6001,
+      "store_title": "iPhone X",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "haha",
+      "express":"免运费",
+      "remain":"999",
+      "price": "699980"
+    }
+  ],
+  "Beddings":[
+    {
+      "id": 7001,
+      "store_title": "iPhone X",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "haha",
+      "express":"免运费",
+      "remain":"999",
+      "price": "699980"
+    }
+  ],
+  "Articles":[
+    {
+      "id": 8001,
+      "store_title": "iPhone X",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "haha",
+      "express":"免运费",
+      "remain":"999",
+      "price": "699980"
+    }
+  ],
+  "Shoes":[
+    {
+      "id": 9001,
+      "store_title": "iPhone X",
+      "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
+      "store": "haha",
+      "express":"免运费",
+      "remain":"999",
+      "price": "699980"
+    }
+  ],
+  "Rests":[
     {
       "id": 1101,
-      "store_title": "香肠",
+      "store_title": "iPhone X",
       "store_src": ["https://raw.githubusercontent.com/jsdcxy/myfrist/master/assets/images/text02.jpg"],
-      "store": "haha"
+      "store": "haha",
+      "express":"免运费",
+      "remain":"999",
+      "price": "699980"
     }
   ]
 }

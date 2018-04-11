@@ -41,18 +41,40 @@ export default {
   },
   methods: {
     getGoods () {
-      let apiUrl = '/foods/'
+      let apiUrl = '/Foods/'
       let s = this.categoryId.substring(0, 3)
-      console.log(s)
       if (s === '100') {
         apiUrl = `${apiUrl}${this.categoryId}`
+      } else if (s === '200') {
+        apiUrl = '/Books/'
+        apiUrl = `${apiUrl}${this.categoryId}`
+      } else if (s === '300') {
+        apiUrl = '/Digital/'
+        apiUrl = `${apiUrl}${this.categoryId}`
+      } else if (s === '400') {
+        apiUrl = '/MensWear/'
+        apiUrl = `${apiUrl}${this.categoryId}`
+      } else if (s === '500') {
+        apiUrl = '/WomensWear/'
+        apiUrl = `${apiUrl}${this.categoryId}`
+      } else if (s === '600') {
+        apiUrl = '/Appliance/'
+        apiUrl = `${apiUrl}${this.categoryId}`
+      } else if (s === '700') {
+        apiUrl = '/Beddings/'
+        apiUrl = `${apiUrl}${this.categoryId}`
+      } else if (s === '800') {
+        apiUrl = '/Articles/'
+        apiUrl = `${apiUrl}${this.categoryId}`
+      } else if (s === '900') {
+        apiUrl = '/Shoes/'
+        apiUrl = `${apiUrl}${this.categoryId}`
       } else {
-        apiUrl = '/books/'
+        apiUrl = '/Rests/'
         apiUrl = `${apiUrl}${this.categoryId}`
       }
       this.$http.get(apiUrl).then(res => {
         this.goods = res.data
-        console.log(this.goods)
       })
     },
     formatPrice () {

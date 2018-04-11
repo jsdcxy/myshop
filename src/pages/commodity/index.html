@@ -1,6 +1,6 @@
 <div class="goods">
     <van-swipe class="goods-swipe" :autoplay="3000">
-      <van-swipe-item v-for="p in goods.store_src" :key="p">
+      <van-swipe-item v-for="(p,id) in goods.store_src" :key="id">
         <img v-bind:src="p" >
       </van-swipe-item>
     </van-swipe>

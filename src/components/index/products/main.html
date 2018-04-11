@@ -1,17 +1,17 @@
 <el-row>
-  <el-col :span="24" v-for="(tles, id) in images" :key="id" >
+  <el-col :span="24" v-for="(tles, id) in products" :key="id" >
      <div class="mb"> 
       <span >	&mdash;{{tles.title}}	&mdash;</span>
       <router-link :to="`/products/${tles.id}`"><el-button  class="eb" size="mini" round>更多<i class="el-icon-arrow-right el-icon--right"></i></el-button></router-link>
     </div>
       <el-row class="">
-        <el-col :span="6" v-for="(img, index) in images[id].store_list" :key="index" v-if="index<4"><!--:offset="id%2!= 0 ? 2 : 0"-->
+        <el-col :span="6" v-for="(pro, index) in products[id].recommend_list" :key="index"><!--:offset="id%2!= 0 ? 2 : 0"-->
           <el-card :body-style="{ padding: '0px' }">
-            <router-link :to="`/commodity/${img.store_id}`"><img v-bind:src="img.store_src" class="image"></router-link>
+            <router-link :to="`/commodity/${pro.id}`"><img v-bind:src="pro.products_src" class="image"></router-link>
             <div style="padding: 14px;">
-              <span>{{img.store_title}}</span>
+              <span>{{pro.products_title}}</span>
               <div class="bottom clearfix">
-                <el-tag>店铺: {{img.store}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</el-tag>
+                <el-tag>店铺: {{pro.store}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</el-tag>
                 <time class="time">{{ currentDate }}</time>
               </div>
             </div>
