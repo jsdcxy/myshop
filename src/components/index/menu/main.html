@@ -1,4 +1,4 @@
-<el-main>
+<el-main id="el">
   <div  class="ppp" v-for="(menu, id) in menus" :key="id" >
     <!-- <el-button >默认按钮</el-button>
     <el-button type="primary" >主要按钮</el-button>
@@ -6,7 +6,7 @@
     <el-button type="info" >信息按钮</el-button>
     <el-button type="warning" >警告按钮</el-button>
     <el-button type="danger" >危险按钮</el-button> -->
-    <router-link :to="`/products/${menu.id}`"><img v-bind:src="menu.src" width="70" height="70" ><br>
-    <span >{{menu.title}}</span></router-link>
+    <router-link :to="`/products/${menu.id}`"><img v-bind:src="menu.src" ><br>
+    <span class="title">{{menu.title}}</span></router-link>
   </div>
 </el-main>

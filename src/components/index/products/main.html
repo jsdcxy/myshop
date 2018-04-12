@@ -1,5 +1,7 @@
 <el-row>
+  
   <el-col :span="24" v-for="(tles, id) in products" :key="id" >
+      <div class="haha"></div>
      <div class="mb"> 
       <span >	&mdash;{{tles.title}}	&mdash;</span>
       <router-link :to="`/products/${tles.id}`"><el-button  class="eb" size="mini" round>更多<i class="el-icon-arrow-right el-icon--right"></i></el-button></router-link>
@@ -8,7 +10,7 @@
         <el-col :span="6" v-for="(pro, index) in products[id].recommend_list" :key="index"><!--:offset="id%2!= 0 ? 2 : 0"-->
           <el-card :body-style="{ padding: '0px' }">
             <router-link :to="`/commodity/${pro.id}`"><img v-bind:src="pro.products_src" class="image"></router-link>
-            <div style="padding: 14px;">
+            <div style="padding: 2px;">
               <span>{{pro.products_title}}</span>
               <div class="bottom clearfix">
                 <el-tag>店铺: {{pro.store}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</el-tag>

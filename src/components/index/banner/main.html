@@ -9,7 +9,7 @@
 <van-notice-bar mode="closeable">
     双十一疯狂打折，更有现金大奖欢迎大家抢购。双十一疯狂打折，更有现金大奖欢迎大家抢购。双十一疯狂打折，更有现金大奖欢迎大家抢购。
   </van-notice-bar>
-<el-carousel :interval="3000" arrow="always" height="200px">
+<el-carousel :interval="3000" arrow="always" >
   <el-carousel-item v-for="(img , id) in images" :key="id">
     <router-link to="/information"><img v-bind:src="img.src" class="img"></router-link>
   </el-carousel-item>

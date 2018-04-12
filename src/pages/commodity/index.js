@@ -32,7 +32,8 @@ export default {
   },
   data () {
     return {
-      goods: []
+      goods: [],
+      show: false
     }
   },
   created () {
@@ -80,8 +81,8 @@ export default {
     formatPrice () {
       return '¥' + (this.goods.price / 100).toFixed(2)
     },
-    onClickCart () {
-      this.$router.push('cart')
+    onClickCart (info) {
+      this.$router.push('/cart')
     },
     sorry () {
       Toast('暂无后续逻辑~')

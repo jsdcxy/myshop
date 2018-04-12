@@ -1,15 +1,9 @@
-.products {
-    background-color: rgb(236, 233, 17);
-    color: #333;
-    text-align: left;
-    line-height: 30px;
-    /* width: 100%; */
-    /* height: 385px; */
-    /* overflow: auto;出现滚动条;*/
-    
-  }
+.el-row{
+  font-size: 5vw;
+  text-align: center;
+}
   .time {
-    font-size: 13px;
+    font-size: 3vw;
     color: #999;
   }
   
@@ -24,8 +18,8 @@
   }
 
   .image {
-    width: 100%;
-    height: 150px;
+    width: 25vw;
+    height: 30vw;
     /* display: block; */
   }
 
@@ -57,12 +51,20 @@
   .el-tag {
     background-color: #FFFFFF;
     padding: 0px;
-    height: 32px;
+    height: 7vw;
     line-height: 30px;
-    font-size: 15px;
+    font-size: 2vw;
     color: #000000;
     border-radius: 4px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 0px solid rgba(64,158,255,.2);
+}
+.haha{
+  background-color: #EFEFF4;
+  height: 10px;
+}
+.el-card__body{
+  width: 25vw;
+  height: 50vw;
 }

@@ -1,0 +1,22 @@
+#el {
+  padding: 0 8px;
+  .ppp {
+    display: inline-block !important;
+    width: 20%;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 16px;
+    color: #606060;
+
+    img {
+      width: 13vw;
+      height: 13vw;
+    }
+    .title {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+}

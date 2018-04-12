@@ -23,4 +23,9 @@ body > .el-container {
   overflow-y: scroll;/*随内容变化滚动条*/
   } */
   html { overflow-y:hidden; }
+  .bj{
+    background-color: #ffffff;
+    height: 10px;
+  }
+
 
