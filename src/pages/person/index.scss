@@ -1,41 +1,38 @@
 .company-detail{
-  .van-cell__value--link {
-    padding-left: 20px;
-  }
   .van-cell__value{
     text-align: left;
     .van-tag {
       position: absolute;
-      right: 8vw;
+      right: 3vw;
   }
   }
   .head-img{
-    height: 80px;
-    width: 80px;
+    height: 23vw;
+    width: 23vw;
     position: absolute;
     left: 30px;
-    top: 100px;
+    top: 27vw;
   }
   .head-name{
     position: absolute;
-    left: 130px;
-    top: 130px;
+    left: 35vw;
+    top: 35vw;
     background-color: #000000;
   }
   .head-flag{
     position: absolute;
-    left: 180px;
-    top: 160px;
+    left: 48vw;
+    top: 43vw;
   }
   .head-attention{
     position: absolute;
-    right: 20px;
-    top: 160px;
+    right: 5vw;
+    top: 43vw;
   }
   .head-company{
     position: absolute;
-    left: 130px;
-    top: 160px;
+    left: 35vw;
+    top: 43vw;
   }
   .person-bj{
     height: 55vw;   
@@ -43,7 +40,7 @@
   }
   .user {
     &-links {
-      padding: 15px 0;
+      height: 70px;
       font-size: 12px;
       text-align: center;
       background-color: #fff;
@@ -51,9 +48,19 @@
         display: block;
         font-size: 24px;
       }
+      
+      .van-col{
+        padding: 15px 0px;
+        border-right: gray solid 1px;
+      }
+       .van-col:last-child{
+         border-left: none;
+         border-right: none;
+       }
     }
   }
   .van-cell__title {
-    width: 20vw !important;
+    width: 24vw !important;
   }
+  
 }
