@@ -1,0 +1,59 @@
+.company-detail{
+  .van-cell__value--link {
+    padding-left: 20px;
+  }
+  .van-cell__value{
+    text-align: left;
+    .van-tag {
+      position: absolute;
+      right: 8vw;
+  }
+  }
+  .head-img{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 30px;
+    top: 100px;
+  }
+  .head-name{
+    position: absolute;
+    left: 130px;
+    top: 130px;
+    background-color: #000000;
+  }
+  .head-flag{
+    position: absolute;
+    left: 180px;
+    top: 160px;
+  }
+  .head-attention{
+    position: absolute;
+    right: 20px;
+    top: 160px;
+  }
+  .head-company{
+    position: absolute;
+    left: 130px;
+    top: 160px;
+  }
+  .person-bj{
+    height: 55vw;   
+    background-image: url(../../assets/images/personbj.png);
+  }
+  .user {
+    &-links {
+      padding: 15px 0;
+      font-size: 12px;
+      text-align: center;
+      background-color: #fff;
+      .van-icon {
+        display: block;
+        font-size: 24px;
+      }
+    }
+  }
+  .van-cell__title {
+    width: 20vw !important;
+  }
+}

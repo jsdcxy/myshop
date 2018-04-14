@@ -40,6 +40,11 @@ export default new Router({
       path: '/me',
       name: 'shop-me',
       component: () => import('@/pages/me/index.vue')
+    },
+    {
+      path: '/person',
+      name: 'shop-person',
+      component: () => import('@/pages/person/index.vue')
     }
   ]
 })

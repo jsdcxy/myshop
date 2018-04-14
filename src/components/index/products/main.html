@@ -3,7 +3,7 @@
   <el-col :span="24" v-for="(tles, id) in products" :key="id" >
       <div class="haha"></div>
      <div class="mb"> 
-      <span >	&mdash;{{tles.title}}	&mdash;</span>
+      <div class="nb"><span >	&mdash;{{tles.title}}	&mdash;</span></div>
       <router-link :to="`/products/${tles.id}`"><el-button  class="eb" size="mini" round>更多<i class="el-icon-arrow-right el-icon--right"></i></el-button></router-link>
     </div>
       <el-row class="">
@@ -13,7 +13,7 @@
             <div style="padding: 2px;">
               <span>{{pro.products_title}}</span>
               <div class="bottom clearfix">
-                <el-tag>店铺: {{pro.store}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</el-tag>
+                <el-tag>店铺: {{pro.store}}&nbsp;&nbsp;&nbsp;&nbsp;</el-tag>
                 <time class="time">{{ currentDate }}</time>
               </div>
             </div>

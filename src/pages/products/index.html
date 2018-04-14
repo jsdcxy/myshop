@@ -10,8 +10,8 @@
   <el-row class="">
     <el-col :span="12" v-for="(p,index) in products" :key="index"><!--:offset="id%2!= 0 ? 2 : 0"-->
       <el-card :body-style="{ padding: '0px' }">
-        <router-link :to="`/commodity/${p.id}`"><img v-bind:src="p.store_src" class="image"></router-link>
-        <div style="padding: 14px;">
+        <router-link :to="`/commodity/${p.id}`"><img v-bind:src="p.store_src" class="product-img"></router-link>
+        <div class="zh" style="padding: 1px;">
           <span>{{p.store_title}}</span>
           <div class="bottom clearfix">
             <span>店铺: {{p.store}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>

@@ -1,14 +1,4 @@
-.products {
-    background-color: rgb(236, 233, 17);
-    color: #333;
-    text-align: center;
-    line-height: 50px;
-    /* width: 100%; */
-    /* height: 385px; */
-    /* overflow: auto;出现滚动条;*/
-    
-  }
-  .time {
+.time {
     font-size: 13px;
     color: #999;
   }
@@ -23,9 +13,9 @@
     float: right;
   }
 
-  .image {
-    width: 100%;
-    height: 100px;
+  .product-img {
+    width: 50vw;
+    height: 30vw;
     display: block;
   }
 
@@ -38,11 +28,7 @@
   .clearfix:after {
       clear: both
   }
-
-.eb{
-  /* text-align: right; */
-  margin-right: 10px;
-  margin-top: 15px;
-  float: right;
-    /* float: right; */
+  .zh{
+    width: 50vw;
+    height: 20vw;
   }
