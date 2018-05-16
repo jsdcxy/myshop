@@ -6,8 +6,10 @@ export default {
   },
   data() {
     return {
-      activeIndex: 0,
-      tabList: []
+      active: 0,
+      tabList: [],
+      categoryId: null,
+      currentTab: '精选',
     }
   },
   computed: {
@@ -19,7 +21,6 @@ export default {
         autoheight: true,
         on: {
           slideChangeTransitionStart() {
-            let length = _this.tabList.length
             _this.currentTab = _this.tabList[this.activeIndex].title
             _this.categoryId = _this.tabList[this.activeIndex].id
             _this.active = _this.tabList[this.activeIndex].index
@@ -32,9 +33,9 @@ export default {
     this.getNews()
   },
   methods: {
-    onTabsChange(activeIndex) {
-      this.activeIndex = activeIndex
-    },
+    // onTabsChange(activeIndex) {
+    //   this.activeIndex = activeIndex
+    // },
     slide(index, title) {
       this.mySwiper.slideTo(index, 500, false)
     },

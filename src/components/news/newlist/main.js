@@ -18,8 +18,7 @@ export default {
   methods: {
     onInfinite($state) {
       let apiUrl = '/hjsnew'
-
-      if (this.currentId === 'new-127-258-369') {
+      if (!this.currentId) {
         apiUrl = `${apiUrl}?isapp=true`
       } else {
         apiUrl = apiUrl + `?id=${this.currentId}`
