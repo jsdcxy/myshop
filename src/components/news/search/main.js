@@ -3,11 +3,15 @@ export default {
   data() {
     return {
       value: '',
+      sb: true
     }
   },
   methods: {
     toSearch() {
-      this.$router.push('/search')
+      // this.$router.push('/search')
+    },
+    fade() {
+      this.sb = !this.sb
     }
   }
 }

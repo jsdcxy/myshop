@@ -1,5 +1,5 @@
 <div class="new-page">
-  <van-nav-bar title="新闻资讯" left-text="返回" right-text="按钮" left-arrow @click-left="$router.back()" @click-right="onClickRight" />
+  <van-nav-bar title="新闻资讯" left-text="返回" right-text="搜索" left-arrow @click-left="$router.back()" @click-right="onClickRight" />
 
   <van-tabs :active="active" swipeable @click="slide">
     <van-tab v-for="(tab,index) in tabList" :title="tab.title" :key="index">
@@ -10,8 +10,12 @@
   <div class="tabs-content" v-swiper:mySwiper="swiperOption">
     <div class="swiper-wrapper">
       <div class="swiper-slide scroll-wrap" v-for="(tab,index) in tabList">
-        <new-list :currentId="categoryId" :key="`articleList-${index}`" v-if="index == active"></new-list>
+        <new-list :currentId="categoryId" v-if="index == active"></new-list>
       </div>
     </div>
   </div>
+
+  <van-popup position="right" v-model="show">
+    <new-search></new-search>
+  </van-popup>
 </div>

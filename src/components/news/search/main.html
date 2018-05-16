@@ -1,0 +1,7 @@
+<div class="new-search">
+  <van-search placeholder="搜索" v-model="value" show-action @click="toSearch">
+    <div slot="action">取消</div>
+  </van-search>
+
+  <div v-if="sb" @click="fade">点我消失</div>
+</div>

@@ -1,4 +1,4 @@
 <template src="./index.html"></template>
 <script src="./index.js"></script>
-<style src="./index.css" ></style>
-// lang="less"
+<style src="./index.scss" lang="scss"></style>
+

@@ -1,15 +1,18 @@
 import Vue from 'vue'
 import newList from '@/components/news/newlist/main.vue'
+import newSearch from '@/components/news/search/main.vue'
 export default {
   components: {
-    newList
+    newList,
+    newSearch
   },
   data() {
     return {
       active: 0,
       tabList: [],
-      categoryId: null,
+      categoryId: 'new-127-258-369',
       currentTab: '精选',
+      show: false
     }
   },
   computed: {
@@ -51,6 +54,8 @@ export default {
       })
     },
     onClickLeft() {},
-    onClickRight() {}
+    onClickRight() {
+      this.show = !this.show
+    }
   }
 }

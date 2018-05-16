@@ -474,6 +474,17 @@
       "time": "12",
       "newid": "f-123-456-01"
     }
+  ],
+  "hotwords": [
+    { "keyword": "路飞" },
+    { "keyword": "路飞" },
+    { "keyword": "路飞" },
+    { "keyword": "路飞" },
+    { "keyword": "路飞" },
+    { "keyword": "路飞" },
+    { "keyword": "路飞" },
+    { "keyword": "路飞" },
+    { "keyword": "路飞" }
   ]
 
 }
