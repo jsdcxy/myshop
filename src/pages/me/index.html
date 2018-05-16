@@ -1,10 +1,16 @@
 <el-tabs type="border-card" >
     <el-tab-pane>
       <span slot="label"><i class="el-icon-date"></i> 我的行程</span>
-      我的行程
+      <button-counter></button-counter>
     </el-tab-pane>
-    <el-tab-pane label="消息中心">消息中心</el-tab-pane>
-    <el-tab-pane label="角色管理"><router-link to="/person">角色管理</router-link></el-tab-pane>
+    <el-tab-pane label="消息中心">
+      <blog-post
+        v-for="post in posts"
+        v-bind:key="post.id"
+        v-bind:post="post"
+      ></blog-post>      
+    </el-tab-pane>
+    <el-tab-pane label="角色管理"><router-link to="/person"><div v-html="posts.content"></div></router-link></el-tab-pane>
     <el-tab-pane label="定时任务补偿">  
       <div class="hjs" style="background-color: #0b53d2;
       height: 800px;">

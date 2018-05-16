@@ -1,0 +1,60 @@
+<div class="new-list" @click='toDetail(item.Id)'>
+  <template v-if='item.TypeLevel == 1'>
+        <h3>{{ item.Title }}</h3>
+      <div class="news-img">
+        <img v-if='item.PlatformArticleAlbum[0]' :src="filterImg(item.PlatformArticleAlbum[0].Imgurl)" />
+      </div>
+      <div class="notes">
+        <span> {{ item.Keyword }} </span>
+        <span class="date">{{ item.CreatedTimeUtc.replace('T',' ').slice(0,-9) }} </span>
+      </div>
+      </template>
+
+  <template v-if='item.TypeLevel == 2'>
+      <h3>{{ item.Title }}</h3>
+      <div class="flex">
+        <div v-for='img in item.PlatformArticleAlbum' v-if='item.PlatformArticleAlbum[0]' class="img-box" :style="`background-image:url(${filterImg(img.Imgurl)})`"></div>
+      </div>
+      <div class="notes">
+        <span> {{ item.Keyword }} </span>
+        <span class="date">{{ item.CreatedTimeUtc.replace('T',' ').slice(0,-9) }} </span>
+      </div>
+    </template>
+
+  <template v-if='item.TypeLevel == 3'>
+      <div class="type3-layout">
+        <div class="layout-left">
+          <h3>{{ item.Title }}</h3>
+          {{ item.Abstract }}
+        </div>
+        <div class="layout-right">
+          <img style="width:100%" v-if='item.PlatformArticleAlbum[0]' :src="filterImg(item.PlatformArticleAlbum[0].Imgurl)" alt="">
+        </div>
+      </div>
+      <div class="notes">
+        <span> {{ item.Keyword }} </span>
+        <span class="date">{{ item.CreatedTimeUtc.replace('T',' ').slice(0,-9) }} </span>
+      </div>
+    </template>
+
+  <template v-if='item.TypeLevel == 4'>
+      <h3>{{ item.Title }}</h3>
+      <div class="news-img">
+        <i class="material-icons">play_circle_filled</i>
+        <img v-if='item.PlatformArticleAlbum[0]' :src="filterImg(item.PlatformArticleAlbum[0].Imgurl)" />
+      </div class="news-img">
+      <div class="notes">
+        <span> {{ item.Keyword }} </span>
+        <span class="date">{{ item.CreatedTimeUtc.replace('T',' ').slice(0,-9) }} </span>
+      </div>
+    </template>
+
+  <template v-if='item.TypeLevel == 5'>
+      <h3>{{ item.Title }}</h3>
+      <div> {{ item.Abstract }} </div>
+      <div class="notes">
+        <span> {{ item.Keyword }} </span>
+        <span class="date">{{ item.CreatedTimeUtc.replace('T',' ').slice(0,-9) }} </span>
+      </div>
+    </template>
+</div>

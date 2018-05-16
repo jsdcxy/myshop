@@ -1,0 +1,24 @@
+.new-hjslist {
+  background-color: white;
+  padding: 10px 0;
+  margin: 0 10px;
+  border-bottom: .5px solid #E3E3E3;
+  .news-img {
+    position: relative;
+    img {
+      border-radius: 5px;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      display: block;
+    }
+  }
+  .notes {
+    margin-top: 10px;
+    color: gray;
+    min-height: 20px;
+    .date {
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.articles-page {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  .van-tabs {
+    z-index: 1;
+    height: calc(100% - 44px);
+    .van-tab--active {
+      color: #238EFA;
+    }
+    .van-tabs__nav-bar {
+      background-color: #238EFA;
+    }
+  }
+  .articles-item {
+    background-color: white;
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: .5px solid #E3E3E3;
+    .notes {
+      margin-top: 10px;
+      color: gray;
+      min-height: 20px;
+      .date {
+        float: right;
+      }
+    }
+    .news-img {
+      position: relative;
+      img {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        display: block;
+        border-radius: 5px;
+      }
+      i {
+        position: absolute;
+        font-size: 50px;
+        right: calc(50% - 25px);
+        top: calc(50% - 25px);
+        opacity: .7;
+      }
+    }
+  }
+  .articles-search {
+    width: 90%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    .search-header {
+      border-bottom: .5px solid #E3E3E3;
+      width: 100%;
+      .van-search {
+        padding: 4px 2px;
+        .right-btn {
+          padding: 0 2px 0 4px;
+        }
+      }
+    }
+    .search-container {
+      padding-left: 16px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.article-profile {
+  // padding-top: 10px;
+  width: 100%;
+  height: 100%;
+  .van-nav-bar {
+    position: absolute;
+  }
+  .nav-title {
+    padding-left: 46px;
+    padding-right: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 46px;
+  }
+  .content {
+    padding: 46px 15px 10px 15px;
+    p {
+      font-size: 14px;
+      line-height: 160%;
+      margin-bottom: 16px;
+      text-align: justify;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    iframe {
+      width: 100%;
+      height: auto;
+    }
+    hr {
+      visibility: hidden;
+    }
+  }
+}

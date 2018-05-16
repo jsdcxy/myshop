@@ -1,0 +1,7 @@
+<section class="articles-page">
+  <van-tabs :active="activeIndex" swipeable @click="onTabsChange" v-if="tabList.length">
+    <van-tab v-for="(tab, index) in tabList" :key="index" :title="tab.title">
+      <articles-list :currentId="tab.id" :key="`articleList-${index}`" v-if="index == activeIndex"></articles-list>
+    </van-tab>
+  </van-tabs>
+</section>

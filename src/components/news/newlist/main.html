@@ -1,0 +1,12 @@
+<div class="news-list">
+  <div class="list-wrap">
+    <content-list :item="item" v-for="item in list" :key="item.id"></content-list>
+  </div>
+
+  <div class="infinite-wrapper" infinite-wrapper>
+    <infinite-loading @infinite="onInfinite" ref="`infiniteLoading-${currentId}`" spinner="spiral" force-use-infinite-wrapper="true" :key="`infinte-${currentId}`">
+      <span slot='no-more'>没有更多数据</span>
+      <span slot='no-results'>暂无数据</span>
+    </infinite-loading>
+  </div>
+</div>

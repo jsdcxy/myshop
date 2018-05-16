@@ -1,0 +1,12 @@
+<div class="new-hjslist" @click='toDetail(item.newid)'>
+  <template>
+        <h3>{{ item.title }}</h3>
+      <div class="news-img">
+        <img  :src="item.imgurl" />
+      </div>
+      <div class="notes">
+        <span> {{ item.content }} </span>
+        <span class="date">{{ item.time }} </span>
+      </div>
+      </template>
+</div>

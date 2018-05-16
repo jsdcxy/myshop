@@ -1,3 +1,17 @@
-<div class="good">
-一只猪
+<div class="new-page">
+  <van-nav-bar title="新闻资讯" left-text="返回" right-text="按钮" left-arrow @click-left="$router.back()" @click-right="onClickRight" />
+
+  <van-tabs v-model="activeIndex" swipeable @click="slide">
+    <van-tab v-for="(tab,index) in tabList" :title="tab.title" :key="index">
+      <!-- <new-list :currentId="tab.id" :key="`articleList-${index}`" v-if="index == activeIndex"></new-list> -->
+    </van-tab>
+  </van-tabs>
+
+  <div class="tabs-content" v-swiper:mySwiper="swiperOption">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide scroll-wrap" v-for="(tab,index) in tabList">
+        <new-list :currentId="tab.id" :key="`articleList-${index}`" v-if="index == activeIndex"></new-list>
+      </div>
+    </div>
+  </div>
 </div>

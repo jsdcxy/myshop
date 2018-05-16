@@ -6,6 +6,9 @@ import router from './router'
 import './plugins/axios'
 import './plugins/element-ui'
 import './plugins/vue-vant'
+import './plugins/infinite-loading'
+import './plugins/vue-awesome-swiper'
+import './assets/style.css'
 
 Vue.config.productionTip = false
 
