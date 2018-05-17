@@ -36,11 +36,15 @@ export default {
     this.getNews()
   },
   methods: {
+    closeSeach() {
+      this.show = false
+    },
     // onTabsChange(activeIndex) {
     //   this.activeIndex = activeIndex
     // },
     slide(index, title) {
-      this.mySwiper.slideTo(index, 500, false)
+      this.mySwiper.slideTo(index, 500, true)
+        // this.active = index
     },
     getNews() {
       Vue.$http.get('/text').then(res => {

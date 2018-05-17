@@ -12,16 +12,16 @@ export default {
   data() {
     return {
       list: [],
-      page: 0
+      page: 1
     }
   },
   methods: {
     onInfinite($state) {
-      let apiUrl = '/hjsnew'
+      let apiUrl = `/hjsnew?_page=${this.page }&_limit=4`
       if (this.currentId == 'new-127-258-369') {
-        apiUrl = `${apiUrl}?isapp=true`
+        apiUrl = `${apiUrl}&isapp=true`
       } else {
-        apiUrl = apiUrl + `?id=${this.currentId}`
+        apiUrl = apiUrl + `&id=${this.currentId}`
       }
 
       Vue.$http.get(apiUrl).then((res) => {
@@ -29,7 +29,7 @@ export default {
           this.list = this.list.concat(res.data)
           this.page += 1
           $state.loaded()
-          if (res.data.length !== 8) {
+          if (res.data.length !== 4) {
             $state.complete()
           }
         } else {

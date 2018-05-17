@@ -9,13 +9,13 @@
 
   <div class="tabs-content" v-swiper:mySwiper="swiperOption">
     <div class="swiper-wrapper">
-      <div class="swiper-slide scroll-wrap" v-for="(tab,index) in tabList">
+      <div class="swiper-slide" v-for="(tab,index) in tabList">
         <new-list :currentId="categoryId" v-if="index == active"></new-list>
       </div>
     </div>
   </div>
 
   <van-popup position="right" v-model="show">
-    <new-search></new-search>
+    <new-search @close="closeSeach"></new-search>
   </van-popup>
 </div>

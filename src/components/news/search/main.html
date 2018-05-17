@@ -1,7 +1,13 @@
 <div class="new-search">
   <van-search placeholder="搜索" v-model="value" show-action @click="toSearch">
-    <div slot="action">取消</div>
+    <div class="btn-cancel" slot="action" v-if="!value.length" @click="closeSearch">取消</div>
+    <div class="btn-cancel" v-else slot="action" @click="search(null)">搜索</div>
   </van-search>
 
-  <div v-if="sb" @click="fade">点我消失</div>
+  <section v-if='!searchList.length' class="search-container">
+    <p class="hot-search-title">热门搜索</p>
+    <span v-for='(item,index) in hotWords' :key='index' class="hotword-item" @click='searchByHot(item.keyword)'>
+      {{ item.keyword }}
+    </span>
+  </section>
 </div>
