@@ -14,7 +14,7 @@ export default {
   methods: {
     toDetail(val) {
       this.$router.push({
-        name: 'articles-profile',
+        name: 'articles-page',
         params: { profile: val }
       })
     },

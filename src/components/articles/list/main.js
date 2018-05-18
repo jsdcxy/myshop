@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     onInfinite($state) {
-      let apiUrl = `https://api.fccn.cc/Api/v1.1/PlatformArticles/PlatformArticle/List?Take=8&Skip=${this.page * 8}&fields=PlatformArticleCategory,PlatformArticleAlbum,Types`
+      let apiUrl = `https://devapi.fccn.cc/Api//v1.1/PlatformArticles/PlatformArticle/List?Take=8&Skip=${this.page * 8}&fields=PlatformArticleCategory,PlatformArticleAlbum,Types}`
 
       if (this.currentId === 'featured') {
         apiUrl = `${apiUrl}&IsTop=true`

@@ -64,6 +64,11 @@ export default new Router({
       name: 'articles-profile',
       component: () =>
         import ('@/pages/information/profile/main.vue')
+    }, {
+      path: '/articles/:profile',
+      name: 'articles-page',
+      component: () =>
+        import ('@/pages/articles/profile/main.vue')
     }
   ]
 })

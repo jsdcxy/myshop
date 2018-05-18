@@ -22,7 +22,7 @@
   <section v-if='!searchList.length' class="search-container">
     <p class="hot-search-title">热门搜索</p>
     <span v-for='(item,index) in hotWords' :key='index' class="hotword-item" @click='searchByHot(item.keyword)'>
-      {{ item.keyword }}
-    </span>
+        {{ item.keyword }}
+      </span>
   </section>
 </div>
