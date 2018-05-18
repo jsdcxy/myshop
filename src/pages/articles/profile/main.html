@@ -1,7 +1,7 @@
 <div class="article-profile scroll-wrap">
   <!-- <van-nav-bar :title="article.Title"  left-arrow @click-left="goBack()"  /> -->
-  <van-nav-bar :title="article.title" :fixed="true" left-arrow @click-left="goBack()">
-    <div class="nav-title" slot="title">{{article.title}}</div>
+  <van-nav-bar :title="article.Title" :fixed="true" left-arrow @click-left="goBack()">
+    <div class="nav-title" slot="title">{{article.Title}}</div>
   </van-nav-bar>
-  <div class="content" v-html='article.content'></div>
+  <div class="content" v-html='article.Content'></div>
 </div>

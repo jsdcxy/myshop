@@ -6,9 +6,11 @@ export default {
       value: '',
       hotWords: [],
       searchList: [],
-      page: 1,
+      page: 0,
       openInfinite: false,
+      hotword: ''
     }
+
   },
   mounted() {
     this.hotSearch()
@@ -24,7 +26,7 @@ export default {
       this.openInfinite = true
     },
     hotSearch() {
-      Vue.$http.get('/hotwords').then(res => {
+      Vue.$http.get('https://devapi.fccn.cc/Api/v1.1/PlatformArticles/PlatformArticleSearch/List').then(res => {
         this.hotWords = res.data
         console.log(this.hotWords)
       }).catch(function(error) {
@@ -40,7 +42,7 @@ export default {
       this.openInfinite = true
     },
     toDetail(val) {
-      this.$router.push({ path: `/information/${val}` })
+      this.$router.push({ path: `/articles/${val}` })
     },
     resetList() {
       this.page = 0
@@ -48,7 +50,7 @@ export default {
       this.$refs.infiniteLoading.$emit('$InfiniteLoading:reset')
     },
     onInfinite($state) {
-      let apiUrl = `/hjsnew?_page=${this.page }&_limit=4`
+      let apiUrl = `https://devapi.fccn.cc/Api/v1.1/PlatformArticles/PlatformArticle/List?fields=PlatformArticleAlbum&Skip=${this.page * 10}&Take=10&Keyword=${this.value.length ? this.value : this.hotword}`
       Vue.$http.get(apiUrl).then((response) => {
         if (response.data.length) {
           this.searchList = this.searchList.concat(response.data)

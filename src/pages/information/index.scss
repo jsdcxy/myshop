@@ -4,6 +4,12 @@
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  .van-tab--active {
+    color: #238EFA;
+  }
+  .van-tabs__nav-bar {
+    background-color: #238EFA;
+  }
   .van-popup {
     z-index: 2013;
     width: 100%;

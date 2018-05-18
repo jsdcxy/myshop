@@ -4,13 +4,13 @@
     <div class="btn-cancel" v-else slot="action" @click="search(null)">搜索</div>
   </van-search>
 
-  <div class="search-item" v-for='item in searchList' @click='toDetail(item.newid)'>
-    <div class="item-left" :style='`background-image:url(${item.imgurl})`'>
+  <div class="search-item" v-for='item in searchList' @click='toDetail(item.Id)'>
+    <div class="item-left" :style='`background-image:url(${item.PlatformArticleAlbum[0].Imgurl})`'>
       <!-- <i v-if='item.TypeLevel == 4' class="material-icons">play_circle_filled</i> -->
     </div>
     <div class="item-right">
-      <div> {{ item.title }}</div>
-      <div class="issue-createTime">{{ item.time }}</div>
+      <div> {{ item.Title }}</div>
+      <div class="issue-createTime">{{ item.CreatedTimeUtc.replace('T',' ').slice(0,-9) }}</div>
     </div>
   </div>
 
@@ -21,8 +21,8 @@
 
   <section v-if='!searchList.length' class="search-container">
     <p class="hot-search-title">热门搜索</p>
-    <span v-for='(item,index) in hotWords' :key='index' class="hotword-item" @click='searchByHot(item.keyword)'>
-        {{ item.keyword }}
+    <span v-for='(item,index) in hotWords' :key='index' class="hotword-item" @click='searchByHot(item.Keyword)'>
+        {{ item.Keyword }}
       </span>
   </section>
 </div>

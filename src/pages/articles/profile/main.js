@@ -6,7 +6,7 @@ export default {
   },
   data() {
     return {
-      article: []
+      article: {}
     }
   },
   computed: {
@@ -19,10 +19,9 @@ export default {
   },
   methods: {
     fetcharticleProfile() {
-      let apiUrl = `/hjsnew?newid=${this.articleId}`
+      let apiUrl = `https://devapi.fccn.cc/Api/v1.1/PlatformArticles/PlatformArticle/${this.articleId}?fields=PlatformArticleAlbum,Contents`
       Vue.$http.get(apiUrl).then((response) => {
-        console.log(response)
-        this.article = response.data[0]
+        this.article = response.data
       })
     },
     goBack() {
